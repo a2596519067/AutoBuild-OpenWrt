@@ -127,6 +127,7 @@ jobs:
           sudo apt-get install bison gcc make
           bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
           source ~/.bashrc
+          source /home/runner/.gvm/scripts/gvm
           gvm install go1.21
           gvm use go1.21
           go version
