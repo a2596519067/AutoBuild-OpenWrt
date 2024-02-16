@@ -70,8 +70,8 @@ sed -i 's/kmod-mt7603 kmod-mt7615e kmod-mt7615-firmware/kmod-mt7603e kmod-mt7615
 sed -i '2a ifconfig rai0 up\nifconfig ra0 up\nbrctl addif br-lan rai0\nbrctl addif br-lan ra0' package/base-files/files/etc/rc.local
 
 # 单独拉取软件包
-git clone -b Lienol-default-settings https://github.com/yuos-bit/other package/default-settings
-git clone -b main --single-branch https://github.com/yuos-bit/other package/yuos
+git clone -b Lienol-default-settings https://github.com/a2596519067/other package/default-settings
+git clone -b main --single-branch https://github.com/a2596519067/other package/yuos
 git clone -b main --single-branch https://github.com/siwind/luci-app-usb_printer.git package/yuos/luci-app-usb_printer
 git clone -b master --single-branch https://github.com/MilesPoupart/luci-app-vssr package/yuos/luci-app-vssr
 
